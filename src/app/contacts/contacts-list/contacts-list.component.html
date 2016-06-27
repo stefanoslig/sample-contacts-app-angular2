@@ -1,0 +1,22 @@
+
+<ul>
+    <li *ngFor="let contact of contacts">
+        <div class="col-sm-4">
+            <div class="panel">
+                <div class="panel-body p-t-10">
+                    <div class="media-main">
+                        <a class="pull-left" href="#">
+                            <img class="thumb-lg img-circle bx-s" src="http://bootdey.com/img/Content/user_1.jpg" alt="">
+                        </a>
+                        <div class="info">
+                            <h4>{{contact.lastName}} {{contact.firstName}}</h4>
+                            <p class="text-muted">Phone: {{contact.phone}}</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
