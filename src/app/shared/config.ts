@@ -1,5 +1,5 @@
 export let CONFIG = {
     baseUrls:{
-        contacts:''
+        contacts:'api/contacts.json'
     }
 }
