@@ -1,11 +1,11 @@
 
 <ul>
     <li *ngFor="let contact of contacts">
-        <div class="col-sm-4">
-            <div class="panel">
+        <div class="col-sm-4" >
+            <div class="panel" (click)="onSelect(contact)">
                 <div class="panel-body p-t-10">
                     <div class="media-main">
-                        <a class="pull-left" href="#">
+                        <a class="pull-left">
                             <img class="thumb-lg img-circle bx-s" src="http://bootdey.com/img/Content/user_1.jpg" alt="">
                         </a>
                         <div class="info">
