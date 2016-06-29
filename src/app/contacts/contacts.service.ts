@@ -3,6 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { Contact } from './contact'
 import { CONFIG } from '../shared/config'
+import {Observer} from 'rxjs/Observer';
 
 let contactsUrl = CONFIG.baseUrls.contacts;
 
@@ -22,6 +23,8 @@ export class ContactsService {
             .map((response: Contact[]) => response.find(p => p.id === id))
             .catch(this.handleError)
     }
+
+    
 
     private handleError(error: any) {
         console.log(error);
